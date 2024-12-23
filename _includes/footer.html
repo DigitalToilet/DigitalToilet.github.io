@@ -31,13 +31,10 @@
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
+                    <a target="_blank" href="https://store.steampowered.com/app/3349840/InKing/">InKing Steam Store Page</a>
                 </li>
                 {% endunless %}
                 {% endfor %}
-                <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
             </div>
 
             <!--Blog-post Section-->
